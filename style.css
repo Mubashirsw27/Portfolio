@@ -140,7 +140,7 @@ body {
 
 /*------------------Media Queries------------------ */
 
-@media  screen and (min-height: 1000px) {
+@media screen and (max-width:1264px), screen and (min-height: 1000px) {
     .navbar {
         font-size: 10px;
     }
@@ -187,6 +187,8 @@ body {
 @media screen and (max-width: 497px) {
     .navbar {
         font-size: 7.5px;
+        padding: 2.5px 0px !important;
+
     }
     .content-heading {
         position: absolute;
@@ -210,6 +212,8 @@ body {
     .navbar {
         font-size: 15px;
         padding: 0px auto;
+        padding: 12px 0px !important;
+
     }
     .content-heading {
         position: absolute;
@@ -239,19 +243,17 @@ body {
     }
     .content-heading {
         position: absolute;
-        top: 10%;
-        width: 100%;
-        max-width: 100%;
-        color: wheat;
+        top: 5%;
+        
     }
     .content-heading h5 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .content-heading h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .content-heading p {
-        font-size: 0.50em;
+        font-size: 0.40em;
         word-spacing: 2.5px;
         letter-spacing: 0.25px;
     }
