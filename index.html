@@ -12,9 +12,21 @@
         href="https://fonts.googleapis.com/css2?family=Langar&family=Nunito:wght@300&family=Quicksand:wght@500;700&family=Ubuntu&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -22,28 +34,123 @@
     <div id="home">
         <!--Nav Start-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <p class="navbar-toggler mx-auto my-auto text-light h1 text" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">Welcome Sir</p>
+            <button class="navbar-toggler mr-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="btn p-0  ml-0 text-light">More</span>
+
             </button>
-          
             <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#service" >Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" >Contact Us</a>
-                  </li>
-              </ul>
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModel">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                            Sign-up
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
+        <!-- Login Modal -->
+
+        <div class="modal fade" id="loginModel" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+                    </div>
+                    <div class="modal-body">
+                        Hi
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#congoModel" data-bs-dismiss="modal">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Sign-up Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get an Account </h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success m-3" data-bs-toggle="modal"
+                            data-bs-target="#congoModel" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="btn btn-danger m-3" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Congratulations Modal -->
+
+        <div class="modal fade" id="congoModel" aria-labelledby="congoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Congratulations Sir</h5>
+                    </div>
+                    <div class="modal-body">
+                        Thank you Sir we have received your information so please let us verify it.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Nav End-->
         <!--Background Start-->
         <div class="back mx-auto">
@@ -309,15 +416,20 @@
                         <h6 class="text-uppercase font-weight-bold">Contact</h6>
                         <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <p>
-                            <i class="fas fa-home mr-3"></i> Sanghar, Sindh , Pakistan</p>
+                            <i class="fas fa-home mr-3"></i> Sanghar, Sindh , Pakistan
+                        </p>
                         <p>
-                            <i class="fas fa-home mr-3"></i> Muet Jamshoro , Sindh , Pakistan</p>
+                            <i class="fas fa-home mr-3"></i> Muet Jamshoro , Sindh , Pakistan
+                        </p>
                         <p>
-                            <i class="fas fa-envelope mr-3"></i>mubashirkhan786bhai@gmail.com</p>
+                            <i class="fas fa-envelope mr-3"></i>mubashirkhan786bhai@gmail.com
+                        </p>
                         <p>
-                            <i class="fas fa-phone mr-3"></i> +92 322 8221800 </p>
+                            <i class="fas fa-phone mr-3"></i> +92 322 8221800
+                        </p>
                         <p>
-                            <i class="fas fa-print mr-3"></i> +92 306 3010317</p>
+                            <i class="fas fa-print mr-3"></i> +92 306 3010317
+                        </p>
 
                     </div>
                     <!-- Grid column -->
@@ -340,7 +452,7 @@
     <!-- Footer End-->
 
 
-    
+
 </body>
 
 </html>
